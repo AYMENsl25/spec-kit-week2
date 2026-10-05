@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#f5f1e8">
+    <title>Small Words, Big Days — Quote of the Day</title>
+    <link rel="stylesheet" href="./styles.css">
+    <script type="module" src="./src/app.js"></script>
+  </head>
+  <body>
+    <main class="page-shell">
+      <header class="masthead" aria-label="Page title">
+        <span class="brand-mark" aria-hidden="true">✳</span>
+        <span>SMALL WORDS, BIG DAYS</span>
+      </header>
+
+      <section class="quote-card" aria-labelledby="page-heading">
+        <div class="card-topline">
+          <span class="eyebrow">A LITTLE PERSPECTIVE</span>
+          <span class="card-number">NO. <span id="quote-number">01</span></span>
+        </div>
+
+        <h1 id="page-heading">A quote for your day.</h1>
+        <div id="quote-region" class="quote-region" aria-live="polite" aria-atomic="true">
+          <blockquote id="quote-text">Loading your quote…</blockquote>
+          <p id="quote-author" class="author"></p>
+        </div>
+
+        <div class="card-actions">
+          <button id="new-quote" class="button button-primary" type="button">
+            <span>New quote</span><span aria-hidden="true">↗</span>
+          </button>
+          <button id="favorite" class="button button-secondary" type="button" aria-pressed="false">
+            <span id="favorite-symbol" aria-hidden="true">☆</span>
+            <span id="favorite-label">Save favorite</span>
+          </button>
+        </div>
+      </section>
+
+      <footer class="page-footer">
+        <span>Keep the words that stay with you.</span>
+        <span>MADE TO PAUSE • MADE TO RETURN</span>
+      </footer>
+    </main>
+  </body>
+</html>
